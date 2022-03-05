@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>Objetos JSON - Coderhouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/productosDOM.js"></script>
+    <script src="js/json.js"></script>
+</head>
+<body>
+    <h1>Objetos JSON</h1>    
+    <p>Carga dinámica de un Array de objetos JSON.</p>
+    <article class="container">
+        <div class="parent">
+            <div>
+                <input type="text" placeholder="Nombre de Producto" id="producto">
+                <input type="number" placeholder="Importe (ARS)" min="0" max="9999" id="importe">
+            </div>
+            <footer>
+                <button role="button" class="primary" onclick="agregarProducto()">AGREGAR VEHICULO</button>
+            </footer>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>VEHICULO</th>
+                            <th>IMPORTE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detalleProductos">
+ 
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
