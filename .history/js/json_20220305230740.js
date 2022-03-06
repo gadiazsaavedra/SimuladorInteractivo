@@ -1,4 +1,3 @@
-
 class Auto {
     constructor(marca, modelo, anioFabricacion, precio, color, paisOrigen) {
         this.marca = marca.toUpperCase();
@@ -21,7 +20,7 @@ function agregarAuto () {
     let col = prompt("Ingrese el color que desea agregar:")
     let pais = prompt("Ingrese el país de origen que desea agregar:")
         autos.push(new Auto(marc, mod, anioFab, prec, col, pais))
-        console.table(autos)
+        console.table()
 
 }
 
@@ -29,7 +28,7 @@ function agregarAuto () {
         const productos = []
 
 function agregarProducto() {
-    
+    //debugger
     let nuevoProducto = {"id": 0, "Producto": "", "Importe": 0.00}
         nuevoProducto.id = idAutomatico()
         nuevoProducto.Producto = productoInput.value.trim().toUpperCase()

@@ -1,4 +1,3 @@
-
 class Auto {
     constructor(marca, modelo, anioFabricacion, precio, color, paisOrigen) {
         this.marca = marca.toUpperCase();
@@ -29,7 +28,7 @@ function agregarAuto () {
         const productos = []
 
 function agregarProducto() {
-    
+    //debugger
     let nuevoProducto = {"id": 0, "Producto": "", "Importe": 0.00}
         nuevoProducto.id = idAutomatico()
         nuevoProducto.Producto = productoInput.value.trim().toUpperCase()

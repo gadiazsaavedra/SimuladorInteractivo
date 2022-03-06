@@ -1,6 +1,4 @@
 debugger
-    
-
 const marcas = ['', 'Ford', 'Renault', 'Fiat', 'Volkswagen', 'Toyota', 'Chevrolet']
 console.table(marcas)
 console.log(marcas[2])

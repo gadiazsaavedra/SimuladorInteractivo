@@ -1,5 +1,17 @@
 debugger
-    
+class Auto {
+    constructor(marca, modelo, anioFabricacion, precio, color, paisOrigen) {
+        this.marca = marca.toUpperCase();
+        this.modelo = modelo;
+        this.anioFabricacion = anioFabricacion;
+        this.precio = parseFloat(precio);
+        this.color = color;
+        this.paisOrigen = paisOrigen;
+    }
+    sumarIVA() {
+        return this.precio * 1.21;
+    }
+}
 
 const marcas = ['', 'Ford', 'Renault', 'Fiat', 'Volkswagen', 'Toyota', 'Chevrolet']
 console.table(marcas)

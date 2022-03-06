@@ -1,5 +1,14 @@
 debugger
-    
+class Auto {
+    constructor(marca, modelo, anioFabricacion, precio, color, paisOrigen) {
+        this.marca = marca.to;
+        this.modelo = modelo;
+        this.anioFabricacion = anioFabricacion;
+        this.precio = precio;
+        this.color = color;
+        this.paisOrigen = paisOrigen;
+    }
+}
 
 const marcas = ['', 'Ford', 'Renault', 'Fiat', 'Volkswagen', 'Toyota', 'Chevrolet']
 console.table(marcas)

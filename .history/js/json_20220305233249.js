@@ -1,4 +1,3 @@
-
 class Auto {
     constructor(marca, modelo, anioFabricacion, precio, color, paisOrigen) {
         this.marca = marca.toUpperCase();

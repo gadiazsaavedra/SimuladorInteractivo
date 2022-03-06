@@ -1,35 +1,10 @@
 
-class Auto {
-    constructor(marca, modelo, anioFabricacion, precio, color, paisOrigen) {
-        this.marca = marca.toUpperCase();
-        this.modelo = modelo;
-        this.anioFabricacion = anioFabricacion;
-        this.precio = parseFloat(precio);
-        this.color = color;
-        this.paisOrigen = paisOrigen;
-    }
-    sumarIVA() {
-        return this.precio * 1.21;
-    }
-}
-const autos = []
-function agregarAuto () {
-    let marc = prompt("Ingrese la marca que desea agregar:")
-    let mod = prompt("Ingrese el modelo que desea agregar:")
-    let anioFab = prompt("Ingrese el año de fabricación que desea agregar:")
-    let prec = prompt("Ingrese el precio que desea agregar:")
-    let col = prompt("Ingrese el color que desea agregar:")
-    let pais = prompt("Ingrese el país de origen que desea agregar:")
-        autos.push(new Auto(marc, mod, anioFab, prec, col, pais))
-        console.table(autos)
-
-}
 
 
-        const productos = []
+const productos = []
 
 function agregarProducto() {
-    
+    //debugger
     let nuevoProducto = {"id": 0, "Producto": "", "Importe": 0.00}
         nuevoProducto.id = idAutomatico()
         nuevoProducto.Producto = productoInput.value.trim().toUpperCase()
